@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "dataset": "physionet",
+  "description": "IMTS-Tokenizer: backbone training, temporal correction and spectral residual readout.",
+  "stages": [
+    {
+      "id": "00",
+      "kind": "train",
+      "overrides": {
+        "variant": "legacy",
+        "scheduler": "plateau",
+        "patience": 12,
+        "min-epochs": 20,
+        "lr-patience": 4,
+        "lr-factor": 0.5,
+        "min-lr": 0.00001,
+        "test-policy": "best",
+        "eval-rng-policy": "legacy",
+        "artifact-storage": "compact",
+        "diag-snapshots": 0
+      }
+    },
+    {
+      "id": "01",
+      "kind": "correct",
+      "overrides": {
+        "batch_size": 16,
+        "artifact-storage": "compact",
+        "diag-snapshots": 0
+      }
+    },
+    {
+      "id": "02",
+      "kind": "readout",
+      "overrides": {
+        "readout-modes": [
+          "shrink_spectral"
+        ],
+        "shrink-grid": [
+          1,
+          0.75,
+          0.5,
+          0.25,
+          0
+        ],
+        "shrink-min-count": 64,
+        "reliability-diagnostics": "on",
+        "batch_size": 16,
+        "evaluate-test": true,
+        "candidate-storage": "gzip",
+        "feature-cache": "off",
+        "artifact-storage": "compact",
+        "ridge-rank": 4
+      }
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "profiles": [
+    {
+      "name": "activity_final",
+      "dataset": "activity",
+      "runner": "pipeline",
+      "recipe": "IMTSTokenizer/configs/final/activity.json"
+    },
+    {
+      "name": "physionet_final",
+      "dataset": "physionet",
+      "runner": "pipeline",
+      "recipe": "IMTSTokenizer/configs/final/physionet.json"
+    },
+    {
+      "name": "mimic_final",
+      "dataset": "mimic",
+      "runner": "pipeline",
+      "recipe": "IMTSTokenizer/configs/final/mimic.json"
+    },
+    {
+      "name": "ushcn_final",
+      "dataset": "ushcn",
+      "runner": "pipeline",
+      "recipe": "IMTSTokenizer/configs/final/ushcn.json"
+    }
+  ]
+}
