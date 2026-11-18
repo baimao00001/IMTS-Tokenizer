@@ -2,7 +2,7 @@
 
 Code for **IMTS-Tokenizer: Time-Aware Tokenization for Irregular Multivariate Time Series Forecasting**, a **NeurIPS 2026 (Poster)** paper.
 
-[Bin Xu](https://openreview.net/profile?id=~Bin_Xu8)<sup>*</sup>, [Yinghua Li](https://openreview.net/profile?id=~Yinghua_Li3)<sup>*</sup>, [Linqi Han](https://openreview.net/profile?id=~Linqi_Han1), [Xiaoyu Li](https://openreview.net/profile?id=~Xiaoyu_Li7), [Xinghao Yang](https://openreview.net/profile?id=~Xinghao_Yang2), [Wei Liu](https://openreview.net/profile?id=~Wei_Liu15), [Yongshun Gong](https://openreview.net/profile?id=~Yongshun_Gong1)<sup>&dagger;</sup>
+[Bin Xu](https://openreview.net/profile?id=~Bin_Xu8)<sup>\*</sup>, [Yinghua Li](https://openreview.net/profile?id=~Yinghua_Li3)<sup>\*</sup>, [Linqi Han](https://openreview.net/profile?id=~Linqi_Han1), [Xiaoyu Li](https://openreview.net/profile?id=~Xiaoyu_Li7), [Xinghao Yang](https://openreview.net/profile?id=~Xinghao_Yang2), [Wei Liu](https://openreview.net/profile?id=~Wei_Liu15), [Yongshun Gong](https://openreview.net/profile?id=~Yongshun_Gong1)<sup>&dagger;</sup>
 
 <sup>*</sup> These authors contributed equally.
 
